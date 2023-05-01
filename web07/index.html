@@ -1,0 +1,62 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>나의 소개</title>
+    <style>
+        #page-title1,#page-title2,#page-title3{font-size:40px;font-weight:bold;text-align: center;margin-top:150px}
+        .box{padding:50px 100px}
+        button{padding:20px;border-radius:10px;border: 1px solid #999;width:100%;cursor:pointer;min-width: 183px}
+        @media screen and (min-width:1024px) {
+	/* Desktop */
+    .menu{margin-top: 100px;display:flex;flex-wrap:wrap;align-content:center}
+    .container{max-width:1320;margin:auto}
+    .content{width:33.3%}
+    #page-title1{display:block;}
+    #page-title2{display:none;}
+    #page-title3{display:none;}
+}
+    @media screen and (min-width:768px) and (max-width: 1023px) {
+	/* Tablet */
+    .container{max-width:970px;margin:auto}
+    .menu{margin-top: 100px;display:flex;flex-wrap:wrap;flex-direction: column;align-content:center}
+    #page-title1{display:none;}
+    #page-title2{display:block;}
+    #page-title3{display:none;}
+}
+    @media screen and (max-width:767px){ 
+	/* Mobile */
+    #page-title1{display:none;}
+    #page-title2{display:none;}
+    #page-title3{display:block;font-size:26px;}
+    .container{max-width:540px;margin:auto}
+    .menu{margin-top: 100px;display:flex;flex-wrap:wrap;flex-direction: column;align-content:center}
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <p id="page-title1">My introduction PC</p>
+        <p id="page-title2">My introduction 태블릿</p>
+        <p id="page-title3">My introduction MOBILE</p>
+        <div class="menu">
+            <div class="content">
+                <div class="box">
+                    <a href="introduce.html"><button role="button">나의 대한 간단한 소개</button></a>
+                </div>
+            </div>
+            <div class="content">
+                <div class="box">
+                    <a href="personality.html"><button role="button">나의 성격 유형</button></a>
+                </div>
+            </div>
+            <div class="content">
+                <div class="box">
+                    <a href="myDream.html"><button role="button">내 목표</button></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
