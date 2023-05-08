@@ -1,0 +1,22 @@
+h1 {
+    font-size: 45px;
+    text-align: center;
+    margin: 0px;
+    padding: 20px;
+  }
+#grid .nav{
+    border-right: 1px solid gray;
+
+  }
+#grid .article {
+    padding:20px;
+  }
+#grid .article p{
+    margin:0;
+  }
+#grid{border:1px solid black;display:grid;grid-template-columns:150px 1fr;}
+
+@media(max-width:800px) {
+    #grid{border:none;display:block;}
+    #grid .nav{border-right:none}
+}
