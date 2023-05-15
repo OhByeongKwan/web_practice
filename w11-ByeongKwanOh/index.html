@@ -1,0 +1,28 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img{width:100%;max-width:30%;}
+    </style>
+</head>
+<body style="text-align:center;">
+    <h1>PlayStation5 Game Title List</h1>
+    <ul style="display:flex;flex-direction:column;gap:10px;align-items:center;">
+        <script>
+            let gameList = ['스파이더맨','피파23','GTA5','오버쿡드','데이즈곤','고스트 오브 쓰시마','그란 투리스모','라스트 오브 어스','철권','언차티드'];
+            let gameImgList = ['spiderman.jpeg','fifa23.jpeg','gta5.jpeg','cook.jpeg','days.jpeg','ghost.jpeg','gran.jpeg','lou.jpeg','tekken.jpeg','un']
+            for(let i = 0 ; i < gameList.length ; i++){
+                document.write(`<li><a href='https://ko.wikipedia.org/wiki/${gameList[i]}'>${gameList[i]}</a></li>`);
+                document.write(`<img src='${gameImgList[i]}'>`);
+            }
+        </script>
+    </ul>
+    <h3>COUNT</h3>
+    <script>
+        document.write(gameList.length);
+    </script>
+</body>
+</html>
