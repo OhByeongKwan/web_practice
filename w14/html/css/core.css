@@ -1,0 +1,8 @@
+.to-do-form{display:flex;flex-direction:column; gap: 3px;width:100%;align-items:center;}
+.to-do-form>*{padding:10px;width: 50%;}
+.to-do-form>textarea{min-height:100px;}
+
+.render-to-do{display:flex;justify-content: center;}
+.render-list{width:50%;border-collapse:collapse;}
+.render-list th{border:1px solid black;padding:10px;}
+.render-list td{border:1px solid black;padding:5px;}
